@@ -4,7 +4,7 @@ import java.util.*;
 
 public class ResourceTest {
     public static void main(String[] args) {
-        Map<String, BorrowAction> resourceTypes = new HashMap<>();
+        Map<String, ResourceBorrow> resourceTypes = new HashMap<>();
         resourceTypes.put("book", new ResourceType());
         resourceTypes.put("journal", new ResourceType());
         resourceTypes.put("thesis", new ResourceType());
