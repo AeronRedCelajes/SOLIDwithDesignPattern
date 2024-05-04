@@ -16,6 +16,6 @@ public class Student {
             throw new IllegalArgumentException("Invalid resource type: " + resourceType);
 
         ResourceTypeBorrow resource = resourceTypes.get(resourceType);
-        resource.borrow(resources.getTitle());
+        resource.borrow(resources, resources.getTitle());
     }
 }
