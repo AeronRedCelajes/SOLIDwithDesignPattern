@@ -1,5 +1,8 @@
 package solidPatternwithDesignPattern;
 
-public interface ResourceTypeBorrow {
-    void borrow(Resources resources, String title);
+public class ResourceTypeBorrow implements BorrowAction {
+    @Override
+    public void borrow(Resources resources, String title) {
+        System.out.println("Borrowing " + resources.getResourceType() + ": " + title);
+    }
 }
