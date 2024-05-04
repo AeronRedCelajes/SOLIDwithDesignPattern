@@ -4,7 +4,7 @@ import java.util.*;
 
 public class ResourceTest {
     public static void main(String[] args) {
-        Map<String, ResourceType> resourceTypes = new HashMap<>();
+        Map<String, ResourceTypeBorrow> resourceTypes = new HashMap<>();
         resourceTypes.put("book", new Book());
         resourceTypes.put("journal", new Journal());
         // This is where adding more resourceTypes as needed for the future

@@ -1,5 +1,5 @@
 package solidPatternwithDesignPattern;
 
-public interface ResourceType {
+public interface ResourceTypeBorrow {
     void borrow(String title);
 }
