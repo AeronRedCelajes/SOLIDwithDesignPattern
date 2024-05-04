@@ -12,4 +12,3 @@ Make sure you have a TestProgram that will validate the proposed refactored code
 
 ## Class Diagram
 ![UML SOLID Principles](https://github.com/AeronRedCelajes/SOLIDwithDesignPattern/assets/142370807/c78ad724-8106-41d9-9c06-6fce41f1c849)
-![UML SOLID Principles_upscayl_4x_ultramix_balanced](https://github.com/AeronRedCelajes/SOLIDwithDesignPattern/assets/142370807/cd245722-6e06-45bb-a872-95dc74aa055c)
