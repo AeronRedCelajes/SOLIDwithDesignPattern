@@ -5,7 +5,6 @@ import java.util.*;
 public class LibrarySystemTest {
     public static void main(String[] args) {
 
-        // This is where the resource types can use actions
         Map<String, ResourceBorrow> resourceTypes = new HashMap<>();
         resourceTypes.put("book", new Book());
         resourceTypes.put("journal", new Journal());
