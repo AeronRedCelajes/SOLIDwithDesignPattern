@@ -1,19 +1,7 @@
 package solidPatternwithDesignPattern;
 
-public class ResourceType {
-    private final String resourceType;
-    private final String title;
-
-    public ResourceType(String resourceType, String title) {
-        this.resourceType = resourceType;
-        this.title = title;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public String getResourceType() {
-        return resourceType;
+public class ResourceType implements ResourceBorrow{
+    public void borrowResource(Student student, Resources resources) {
+        System.out.println(student.getName() + " is borrowing a/an " + resources.getResourceType() + ": " + resources.getTitle());
     }
 }

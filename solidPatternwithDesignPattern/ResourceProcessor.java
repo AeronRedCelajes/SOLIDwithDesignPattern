@@ -9,14 +9,14 @@ public class ResourceProcessor {
         this.resourceTypes = resourceTypes;
     }
 
-    public void borrowResource(Student student, ResourceType resourceType) {
-        String type = resourceType.getResourceType();
-        ResourceBorrow resourceBorrow = resourceTypes.get(type);
+    public void borrowResource(Student student, Resources resources) {
+        String resourceType = resources.getResourceType();
+        ResourceBorrow resourceBorrow = resourceTypes.get(resourceType);
 
-        if (!resourceTypes.containsKey(type)) {
-            throw new IllegalArgumentException("Invalid resource type: " + type);
+        if (!resourceTypes.containsKey(resourceType)) {
+            throw new IllegalArgumentException("Invalid resource type: " + resourceType);
         }
 
-        resourceBorrow.borrowResource(student, resourceType);
+        resourceBorrow.borrowResource(student, resources);
     }
 }
