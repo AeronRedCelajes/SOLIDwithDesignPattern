@@ -1,32 +1,36 @@
 package solidPatternwithDesignPattern;
 
+import java.util.*;
+
 public class LibrarySystemTest {
     public static void main(String[] args) {
+
+        // This is where the resource types can use actions
+        Map<String, ResourceBorrow> resourceTypes = new HashMap<>();
+        resourceTypes.put("book", new Book());
+        resourceTypes.put("journal", new Journal());
 
         // This is where to create students
         Student student1 = new Student("Aeron");
         Student student2 = new Student("Cesar");
 
         // This is where to create resource types
-        ResourceType bookType1 = new ResourceType("Fairy Tail Manga");
-        ResourceType bookType2 = new ResourceType("One Piece Manga");
-        ResourceType journalType1 = new ResourceType("My Journal");
-        ResourceType journalType2 = new ResourceType("My Journey To NEU");
+        ResourceType book1 = new ResourceType("book","Fairy Tail Manga");
+        ResourceType journal1 = new ResourceType("journal","My Journal in NEU");
+        ResourceType book2 = new ResourceType("book","One Piece Manga");
+        ResourceType journal2 = new ResourceType("journal","My Funny Journal");
 
-        // This is where the resource types can use actions
-        ResourceBorrow bookBorrower = new Book();
-        ResourceBorrow journalBorrower = new Journal();
+        ResourceProcessor resourceProcessor = new ResourceProcessor(resourceTypes);
 
-        bookBorrower.borrowResource(student1, bookType1);
+        resourceProcessor.borrowResource(student1, book1);
         System.out.println();
 
-        bookBorrower.borrowResource(student2, bookType2);
+        resourceProcessor.borrowResource(student2, journal1);
         System.out.println();
 
-        journalBorrower.borrowResource(student2, journalType1);
+        resourceProcessor.borrowResource(student2, book2);
         System.out.println();
 
-        journalBorrower.borrowResource(student1, journalType2);
-        System.out.println();
+        resourceProcessor.borrowResource(student1, journal2);
     }
 }
