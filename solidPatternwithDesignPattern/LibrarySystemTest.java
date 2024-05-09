@@ -18,10 +18,10 @@ public class LibrarySystemTest {
         Student student3 = new Student("Hans");
 
         // This is where to create resource types
-        Resources book1 = new Resources("book","Fairy Tail Manga");
-        Resources journal = new Resources("journal","My Journal in NEU");
-        Resources thesis = new Resources("thesis","Research About The Universe");
-        Resources audioBook = new Resources("audio book","My Funny Story");
+        Resources book1 = new Resources("book", "Fairy Tail Manga");
+        Resources journal = new Resources("journal", "My Journal in NEU");
+        Resources thesis = new Resources("thesis", "Research About The Universe");
+        Resources audioBook = new Resources("audio book", "My Funny Story");
 
         ResourceProcessor resourceProcessor = new ResourceProcessor(resourceTypes);
 
