@@ -12,7 +12,7 @@ public class LibrarySystemTest {
 
         // This is where to create students
         Student student1 = new Student("Aeron");
-        Student student2 = new Student("Cesar");
+        Student student2 = new Student("Jage");
 
         // This is where to create resource types
         ResourceType book1 = new ResourceType("book","Fairy Tail Manga");
